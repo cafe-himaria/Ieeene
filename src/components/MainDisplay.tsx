@@ -9,7 +9,7 @@ export const MainDisplay = (props: Props) => {
 
   return (
     <>
-      <div>{children}</div>
+      <div className="w-full p-4 overflow-y-scroll">{children}</div>
     </>
   );
 };
