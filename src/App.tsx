@@ -1,12 +1,21 @@
-import { Card, Metric, Text } from "@tremor/react";
+import { Header } from "./components/Header";
+import { MainDisplay } from "./components/MainDisplay";
+import { SideMenu } from "./components/SideMenu";
+import "./App.css";
+import { AppRoutes } from "./router";
 
 function App() {
   return (
     <>
-      <Card className="max-w-xs mx-auto">
-        <Text>Sales</Text>
-        <Metric>$ 34,743</Metric>
-      </Card>
+      <Header />
+      <div className="flex h-calc">
+        <div className="w-20">
+          <SideMenu />
+        </div>
+        <div className="">
+          <AppRoutes />
+        </div>
+      </div>
     </>
   );
 }
