@@ -19,7 +19,7 @@ export const SideMenu = () => {
 
   return (
     <>
-      <div className="bg-neutral-900 h-full text-white">
+      <div className="bg-neutral-900 h-full text-white pt-4">
         {menuItems.map((item) => {
           return (
             <Link
